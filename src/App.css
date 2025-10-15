@@ -1,38 +1,69 @@
 .App {
+  text-align: left;
+  border: 1px solid wheat;
+  width: 70%;
+  padding: 20px;
+  height: auto;
+  box-shadow: 10px 10px 20px #101010;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+}
+
+body{
+  background-color: #282c34;
+  margin: 0;
+  padding: 0;
+  color: wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+/* Tasks API styles */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container .all-tasks, .search-task, .add-task, .update-task {
+  border: 1px solid wheat;
+  margin: 20px 0;
+  padding: 0 0 20px 10px;
+  box-shadow: 10px 10px 20px #101010;
+}
+
+.title {
+  font-size: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  margin: 10px 0 0 20px;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input:focus {
+  outline: none;
+  border: none;
+  background-color: #444;
+  color: wheat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  margin: 10px 0 0 20px;
+  padding: 5px 10px;
+  background-color: wheat;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #666;
 }
